@@ -1,26 +1,39 @@
 # Dependencies
-markdown:         redcarpet
-highlighter:      pygments
+markdown:         kramdown 
+highlighter:      rouge 
 
 # Permalinks
-permalink:        pretty
-relative_permalinks: true
+permalink:        /:categories/:title/ 
 
 # Setup
-title:            Hyde
-tagline:          'A Jekyll theme'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:              http://hyde.getpoole.com
+title:            Blog 
+description:      'Another tech blog with functional flavored code and other ingredients.'
+url:              https://gtrefs.github.io
 baseurl:          /
 
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+  name:           'Gregor Trefs'
+  url:            https://twitter.com/gtrefs
+
+disqus_shortname: gtrefs
 
 paginate:         5
+kramdown:
+  input: GFM
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+  syntax_highlighter: rouge
 
 # Custom vars
 version:          2.1.0
+gems:
+        - jekyll-sitemap
+        - jekyll-paginate
+        - jekyll-gist
+        - jekyll-feed
 
 github:
-  repo:           https://github.com/poole/hyde
+  repo:           https://github.com/gtrefs
