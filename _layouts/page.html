@@ -2,7 +2,17 @@
 layout: default
 ---
 
-<div class="page">
+<section class="page">
   <h1 class="page-title">{{ page.title }}</h1>
   {{ content }}
-</div>
+  {% if page.mail != false %}
+  <script type="text/javascript">
+document.write("<n uers=\"znvygb:Tertbe.Gersf@tznvy.pbz\" ery=\"absbyybj\">".replace(/[a-zA-Z]/g, function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);}));
+  </script>Gregor's Mail.</a>
+  {% endif %}
+</section>
+
+{% if page.comments != false and site.disqus_shortname %}
+<section id="disqus_thread"></section><!-- /#disqus_thread -->
+   {% include disqus_comments.html %}
+{% endif %}
