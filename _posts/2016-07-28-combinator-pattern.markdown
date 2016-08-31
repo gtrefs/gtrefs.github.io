@@ -5,8 +5,6 @@ modified: 2016-07-28
 categories: [Code] 
 description: "Using functions to compose complex things"
 tags: [Java 8, Functional Programming]
-image: 
-  feature: 01082016_combinator/01_cover.png 
 comments: true
 share: true
 ---
@@ -173,7 +171,18 @@ User gregor = new User("", 30, "mail@mailinator.com");
 ValidationResult result = validation.apply(gregor);
 result.getReason().ifPresent(System.out::println); // Name is empty.
 ```
-Primitive `holds` tests a given `Predicate` and, either, returns `valid` or a new `Invalid`. Primitives `nameIsNotEmpty` and `eMailContainsAtSign` have been refactored accordingly. The `and` combinator only computes the result of `other` if `this` yields `valid`. For example, `eMailContainsAtSign` is not evaluated for a given user, if `nameIsNotEmpty` is already `Invalid`. From a developers perspective this little API change conveys much more information compared to a plain `Boolean` value. However, there are some flaws in the design. For example, in a web context one would like to evaluate all validation rules in order to have an extensive report, but the `and` operator is short-circuiting. Thus, there is a need for an `all` combinator evaluating all validation rules. Maybe you want to give it a try? 
+Primitive `holds` tests a given `Predicate` and, either, returns `valid` or a new `Invalid`. Primitives `nameIsNotEmpty` and `eMailContainsAtSign` have been refactored accordingly. The `and` combinator only computes the result of `other` if `this` yields `valid`. For example, `eMailContainsAtSign` is not evaluated for a given user, if `nameIsNotEmpty` is already `Invalid`. From a developers perspective this little API change conveys much more information compared to a plain `Boolean` value. However, there are some flaws in the design. For example, in a web context one would like to evaluate all validation rules in order to have an extensive report, but the `and` operator is short-circuiting. Thus, there is a need for an `all` combinator evaluating all validation rules. 
+
+{::options parse_block_html="true" /}
+<div class="exercise">
+Implement an `all` combinator which executes all given `UserValidation`s and gathers the results. Use the following method declaration.
+
+```java
+static UserValidtion all(UserValidation... validations){ 
+  // Your code here 
+}
+```
+</div>
 
 # Summary
 This post presented a possible design for the combinator pattern in Java 8. We discussed primitives and combinators as building blocks. A validation use case illustrated how the pattern is applied to a specific domain. Last, we reasoned about the result of a validation. There are some benefits of a well-applied combinator pattern. From a developers perspective the API is made of terms from the domain. For example, primitives `nameIsNotEmpty` and `eMailContainsAtSign` clearly state their purpose. It strengthens the Single Responsibility Principle by enabling an easier seperation of concers. Further, there is a clear distinction between combining and application phase. One first constructs an instance and then executes it. This makes the pattern applicable in a parallel environment.
