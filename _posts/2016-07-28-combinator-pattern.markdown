@@ -89,7 +89,7 @@ Primitives are translated to static methods and combinators to default methods. 
 ```java
 List<User> users = findAllUsers()
     .stream().parallel()
-    .filter(nameIsNotEmpty().and(eMailContainsAtSign()))
+    .filter(nameIsNotEmpty().and(eMailContainsAtSign())::apply) // to Predicate
     .collect(Collectors.toList());
 ```
 
