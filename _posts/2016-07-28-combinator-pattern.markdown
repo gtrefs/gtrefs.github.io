@@ -3,7 +3,7 @@ layout: post
 title: "Combinator Pattern with Java 8"
 modified: 2016-07-28
 categories: [Code] 
-description: "Using functions to compose complex things"
+description: "Compose simple primitives into complex structures"
 tags: [Java 8, Functional Programming]
 comments: true
 share: true

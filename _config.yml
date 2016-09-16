@@ -3,17 +3,21 @@ markdown:         kramdown
 highlighter:      rouge 
 
 # Permalinks
-permalink:        /:categories/:title/ 
+permalink:        :categories/:title/ 
 
 # Setup
 title:            Blog 
 description:      'Another tech blog with functional flavored code and other ingredients.'
 url:              https://gtrefs.github.io
-baseurl:          /
+baseurl:        /
 
 author:
-  name:           'Gregor Trefs'
-  url:            https://twitter.com/gtrefs
+  name: "Gregor Trefs"
+  twitter: gtrefs
+  facebook: gtrefs        
+          
+twitter:
+  username: gtrefs
 
 disqus_shortname: gtrefs
 
@@ -34,6 +38,7 @@ gems:
         - jekyll-paginate
         - jekyll-gist
         - jekyll-feed
+        - jekyll-seo-tag
 
 github:
   repo:           https://github.com/gtrefs
