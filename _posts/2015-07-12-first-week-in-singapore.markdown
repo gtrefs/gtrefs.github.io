@@ -5,8 +5,6 @@ description: "Ankuft, Appartement und China-Town"
 modified: 2015-07-12
 categories: [singapur]
 tags: [singapur, ankunft singapur, china town]
-image:
-  feature: week1_A380.jpg 
 comments: true
 share: true 
 ---

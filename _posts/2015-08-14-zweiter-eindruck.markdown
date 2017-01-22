@@ -5,8 +5,6 @@ description: "Die Stadt"
 modified: 2015-08-14
 categories: [singapur]
 tags: [singapur]
-image:
-  feature: week1_parlament.jpg
 comments: true
 share: true
 ---

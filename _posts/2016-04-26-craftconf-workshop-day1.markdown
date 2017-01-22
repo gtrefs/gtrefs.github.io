@@ -5,8 +5,6 @@ modified: 2016-04-26
 categories: [Conference] 
 description: "Outside-In TDD with Sandro Mancuso"
 tags: [TDD, Mock, CraftConf]
-image: 
-  feature: 26042016_craftconf/01_workshop_day1_poster.jpg
 comments: true
 share: true
 ---

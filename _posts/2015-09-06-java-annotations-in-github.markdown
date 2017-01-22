@@ -5,9 +5,7 @@ modified: 2015-09-06
 categories: [Java, GitHub] 
 description: "Java annotations and GitHub name references"
 tags: [Java, GitHub, Fun]
-image: 
-  feature: 02092015_githubjava/01_cover_executed.png
-comments: true
+omments: true
 share: true
 date: 2015-09-06T11:23:20+02:00
 ---
