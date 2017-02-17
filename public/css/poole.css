@@ -279,6 +279,11 @@ tbody tr:nth-child(odd) th {
   border-left: 4px solid lightblue;
 }
 
+.message p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /* Exercise
  *
  * Excersises to be done by readers
