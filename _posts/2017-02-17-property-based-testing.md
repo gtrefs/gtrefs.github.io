@@ -129,8 +129,6 @@ Once we check the property again, it is satisfied and the result is printed on t
 
 > Every third element must start with Fizz: OK, passed 1000 tests in 111 ms.
 
-![Property Based Testing with Javaslang](https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2016/12/1482055944property-based-testing-Javaslang.jpg)
-
 ### Increase the Sample Size
 
 Per default, `check` tries to falsify a property 1000 times.
