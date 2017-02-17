@@ -29,7 +29,7 @@ Compared with Java 8 `Stream`s, the main benefit in the scope of this article is
 
 ## Property Based Testing
 
-Property based testing (PBT) allows developers to specify the high-level behaviour of a program in terms of [invariants](https://en.wikipedia.org/wiki/Invariant_(computer_science) it should fulfill.
+Property based testing (PBT) allows developers to specify the high-level behaviour of a program in terms of [invariants](https://en.wikipedia.org/wiki/Invariant_(computer_science)) it should fulfill.
 A PBT framework creates test cases to ensure that the program runs as specified.
 
 A _property_ is the combination of an invariant with an input values generator.
