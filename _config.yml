@@ -9,7 +9,6 @@ permalink:        :categories/:title/
 title:            Blog 
 description:      'Another tech blog with functional flavored code and other ingredients.'
 url:              https://gtrefs.github.io
-baseurl:        /
 
 author:
   name: "Gregor Trefs"
