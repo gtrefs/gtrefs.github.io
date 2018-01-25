@@ -92,8 +92,8 @@ The result of computation `hello` is bound to variable `str` and then used in co
 A monad must adhere to [three laws](http://learnyouahaskell.com/a-fistful-of-monads#monad-laws):
 
 * **left identity** - if we turn a value into a computation using `of` and then feed it to a function using `flatMap`, it's the same as just taking the value and applying the function to it:  `flatMap(of(x), f) == f.apply(x)` 
-* **right identity** - if we have a computation and we use `flatMap` to feed it to `of`, the result is our original computation: `flatMap(x, v -> of(v)) == x`
-* **associativity** - if we have a chain of function applications with `flatMap`, it shouldn't matter how they are nested: `flatMap(flatMap(x, f), g) == flatMap(x, v -> flatMap(f.apply(v), g))`
+* **right identity** - if we have a computation and we use `flatMap` to feed it to `of`, the result is our original computation: `flatMap(m, v -> of(v)) == m`
+* **associativity** - if we have a chain of function applications with `flatMap`, it shouldn't matter how they are nested: `flatMap(flatMap(m, f), g) == flatMap(m, v -> flatMap(f.apply(v), g))`
 
 A type which adheres to the laws is also called *monadic*.
 The laws describe how the operations relate to each other and, thus, allow us to make reasonable assumptions about their behavior.
