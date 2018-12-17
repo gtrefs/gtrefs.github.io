@@ -2,7 +2,7 @@
 layout: post
 title: "My fairly incomplete view on programming"
 modified: 2018-12-17
-categories: [funtional programming, programming] 
+categories: [programming] 
 description: "What is meant by computation and model of computation? How does it refer to functional programming?"
 tags: [Functional Programming, Referential transparency]
 comments: true
